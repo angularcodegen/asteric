@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { AbstractControl, Validators } from '@angular/forms';
 
@@ -10,6 +11,8 @@ import { AbstractControl, Validators } from '@angular/forms';
     </label>
   `,
   styles: [],
+  imports: [NgIf],
+  standalone: true,
 })
 export class LabelComponent {
   @Input() for?: string;

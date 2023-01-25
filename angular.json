@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "asteric": {
+    "asterisk": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -44,19 +44,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/asteric",
+            "outputPath": "dist/asterisk",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -96,10 +91,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "asteric:build:production"
+              "browserTarget": "asterisk:build:production"
             },
             "development": {
-              "browserTarget": "asteric:build:development"
+              "browserTarget": "asterisk:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -107,7 +102,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "asteric:build"
+            "browserTarget": "asterisk:build"
           }
         }
       }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { LabelComponent } from './label.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,8 @@ import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/fo
       </form>
     </div>
   `,
+  standalone: true,
+  imports: [ReactiveFormsModule, LabelComponent],
   styles: [],
 })
 export class AppComponent {
