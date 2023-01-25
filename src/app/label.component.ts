@@ -5,7 +5,7 @@ import { AbstractControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-label',
   template: `
-    <label [for]="for" class="form-label">
+    <label [for]="for" class="block mb-2 text-sm font-medium text-gray-300">
       <ng-content></ng-content>
       <ng-container *ngIf="required">*</ng-container>
     </label>
