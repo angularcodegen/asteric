@@ -15,7 +15,7 @@ import { LabelComponent } from './label.component';
           <app-label for="password" [control]="form.controls.password"> Password </app-label>
           <input type="password" class="form-control" id="password" formControlName="password" autocomplete="off" />
         </div>
-        <div class="flex gap-3 flex-wrap sm:flex-nowrap">
+        <div class="flex gap-3 flex-wrap sm:flex-nowrap mt-8">
           <button type="button" (click)="toggleValidator(form.controls.password)">Toggle password validator</button>
           <button type="button" (click)="toggleValidator(form.controls.login)">Toggle login validator</button>
         </div>
